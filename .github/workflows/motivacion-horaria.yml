@@ -1,0 +1,80 @@
+name: Motivación horaria Mis Sueldos
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar motivación con OneSignal
+        env:
+          ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
+        run: |
+          python3 - <<'PY'
+          import datetime
+          import json
+          import os
+          import urllib.request
+
+          key = os.getenv('ONESIGNAL_REST_API_KEY', '').strip()
+          if not key:
+              raise SystemExit('Falta configurar el secreto de OneSignal')
+
+          frases = [
+              'Cada paso de hoy cuenta para tu futuro. 💎',
+              'La constancia convierte los sueños en resultados. 💪',
+              'Tu disciplina te acerca a tus metas. 🌟',
+              'Un día a la vez. Tu progreso cuenta. 🌱',
+              'Avanza a tu ritmo y recuerda tus metas. 🎯',
+              'Trabaja por tu futuro y cuida tu descanso. 💚',
+              'Lo importante no es la velocidad, sino continuar. 🚀',
+              'Cada esfuerzo honesto tiene valor. ✨',
+              'Aprende de ayer y aprovecha el presente. ☀️',
+              'Tu tiempo es valioso. Úsalo con intención. ⏳',
+              'Celebra los pequeños logros. También suman. 🏆',
+              'Una buena decisión puede cambiar tu mañana. 🌅',
+              'Confía en el proceso y revisa tu progreso. 📈',
+              'Tu mejor inversión también eres tú. 💎',
+              'Construye hábitos que te acerquen a tus objetivos. 🧭',
+              'No necesitas hacerlo perfecto; persevera. 💪',
+              'Cada meta grande empieza con acciones pequeñas. 🌟',
+              'Tu esfuerzo merece reconocimiento. 💚',
+              'Hoy puedes avanzar un poquito más. 🎯',
+              'El descanso también es parte de la disciplina. 🌙',
+              'Piensa en lo lejos que has llegado. ✨',
+              'Tu futuro se construye con tus acciones. 🔑',
+              'Mantén tus prioridades claras y avanza. 🌱',
+              'Trabajar con propósito hace la diferencia. 💎'
+          ]
+
+          ahora = datetime.datetime.now(datetime.timezone.utc)
+          indice = int(ahora.timestamp() // 3600) % len(frases)
+
+          datos = {
+              'app_id': '8920a2de-6e84-4bc0-9191-78e952a9f4c6',
+              'target_channel': 'push',
+              'included_segments': ['Total Subscriptions'],
+              'headings': {'en': '💎 Mis Sueldos — Sigue adelante'},
+              'contents': {'en': frases[indice]},
+              'url': 'https://alexanderoliverosrs-lgtm.github.io/kapitalcoins-app/'
+          }
+
+          peticion = urllib.request.Request(
+              'https://api.onesignal.com/notifications',
+              data=json.dumps(datos, ensure_ascii=False).encode('utf-8'),
+              headers={
+                  'Authorization': 'Key ' + key,
+                  'Content-Type': 'application/json; charset=utf-8'
+              },
+              method='POST'
+          )
+
+          with urllib.request.urlopen(peticion, timeout=30) as respuesta:
+              print(respuesta.read().decode('utf-8'))
+          PY
