@@ -80,6 +80,77 @@ body[data-theme="light"] .exp-editor input,body[data-theme="light"] .exp-editor 
 body[data-theme="light"] .expense-tabs button{color:#647b8b}
 body[data-theme="dark"] .expense-tabs button{color:#adc8d1}
 .expense-tabs button.active,body[data-theme="dark"] .expense-tabs button.active,body[data-theme="light"] .expense-tabs button.active{background:linear-gradient(120deg,#0aa789,#36dab2);color:#041f21}
+
+/* VERSION 3.7 PRO — RESTYLING VISUAL ONLY: no logic/layout/data changes */
+:root{--accent:#00ddac;--accent2:#18a9ed;--danger:#fb657d}
+body[data-theme="dark"]{
+ background:radial-gradient(ellipse 85% 40% at 85% -5%,#06384b 0%,transparent 70%),radial-gradient(ellipse 85% 45% at 0% 70%,#05282c 0%,transparent 75%),#020912!important;
+ color:#ecf8fc;
+}
+body[data-theme="dark"] .wrap{background:transparent}
+body[data-theme="dark"] .header{padding:13px 13px 14px;border:1px solid #164356;border-radius:22px;background:linear-gradient(115deg,#091d2a 0%,#06121e 100%);box-shadow:0 16px 30px #0004}
+body[data-theme="dark"] .title{color:#fff;font-weight:900;letter-spacing:-1px}
+body[data-theme="dark"] .sub{color:#82a8b9}
+body[data-theme="dark"] .theme-toggle,body[data-theme="dark"] .pill{background:#102e3e;border-color:#276477;color:#d8f4f5;box-shadow:inset 0 1px #ffffff0b}
+body[data-theme="dark"] .hero{
+ background:radial-gradient(circle at 90% 0%,#167d75a8,transparent 45%),linear-gradient(130deg,#0c433e 0%,#072a36 54%,#061622 100%)!important;
+ border:1px solid #15a892!important;box-shadow:0 17px 42px #0007,0 0 26px #08f0ae18!important;
+ border-radius:26px;
+}
+body[data-theme="dark"] .hero .eyebrow{color:#affbea;letter-spacing:1.5px}
+body[data-theme="dark"] .hero .value{color:#fff;font-size:clamp(38px,11vw,55px);text-shadow:0 4px 26px #0dfbc039}
+body[data-theme="dark"] .hero-footer{color:#b6d5d8}
+body[data-theme="dark"] .progress,body[data-theme="dark"] .pay-card .track{background:#ffffff20}
+body[data-theme="dark"] .progress>div,body[data-theme="dark"] .pay-card .track b{background:linear-gradient(90deg,#00ba98,#55ffd0)}
+body[data-theme="dark"] .pay-card,body[data-theme="dark"] .stat,body[data-theme="dark"] .panel,body[data-theme="dark"] .calendar,body[data-theme="dark"] .push-panel{
+ background:linear-gradient(155deg,#0c2233 0%,#071522 100%)!important;
+ border:1px solid #205268!important;
+ box-shadow:0 13px 26px #0004, inset 0 1px #ffffff0b!important;
+ border-radius:23px;
+}
+body[data-theme="dark"] .pay-card{border-top:2px solid #16c9a2!important}
+body[data-theme="dark"] .pay-card .big,body[data-theme="dark"] .stat .amount{color:#fff}
+body[data-theme="dark"] .pay-card h3,body[data-theme="dark"] .stat .sub{color:#94bac7}
+body[data-theme="dark"] .section h2,body[data-theme="dark"] .panel h2{color:#f2fcff;font-weight:850}
+body[data-theme="dark"] .calendar{background:#071522!important}
+body[data-theme="dark"] .day{background:#112b3b!important;border:1px solid #173d4d!important;color:#e9f8ff;border-radius:12px}
+body[data-theme="dark"] .day.has{background:linear-gradient(150deg,#0b6b52,#073a38)!important;border-color:#148d70!important}
+body[data-theme="dark"] .day.selected{outline:2px solid #3affe0;outline-offset:1px}
+body[data-theme="dark"] .day.today{border-color:#1ef3bf!important}
+body[data-theme="dark"] .day.behind{background:#48202e!important;border-color:#b14d61!important}
+body[data-theme="dark"] .day.empty{background:transparent!important;border-color:transparent!important}
+body[data-theme="dark"] .day.pending{background:#112b3b!important}
+body[data-theme="dark"] .day small{color:#a2ffe1}
+body[data-theme="dark"] .day.behind small{color:#ff9cab}
+body[data-theme="dark"] .field input,body[data-theme="dark"] .field textarea,body[data-theme="dark"] .exp-editor input,body[data-theme="dark"] .exp-editor select{
+ background:#041421!important;border:1px solid #2c6072!important;color:#f2fafd!important;
+ box-shadow:inset 0 2px 10px #0005;
+}
+body[data-theme="dark"] .summaryrow,body[data-theme="dark"] .mini-table th,body[data-theme="dark"] .mini-table td,body[data-theme="dark"] .expense-item{border-color:#24495b}
+body[data-theme="dark"] .primary,body[data-theme="dark"] .push-action:not(.off){background:linear-gradient(130deg,#00e1a9,#00a98d);color:#00221e;box-shadow:0 7px 18px #00d6a139}
+body[data-theme="dark"] .round,body[data-theme="dark"] .ghost{background:#123144;border-color:#2b6072;color:#e2faff}
+body[data-theme="dark"] .expense-tabs{background:#03131f;border-color:#225365}
+body[data-theme="dark"] .expense-tabs button.active{background:linear-gradient(135deg,#00dcad,#00a0bc);color:#002624}
+body[data-theme="dark"] .expense-calendar,body[data-theme="dark"] .expense-balance>div{background:#081d2c;border-color:#23546a}
+body[data-theme="dark"] .expense-balance .exp-net{background:linear-gradient(120deg,#074d46,#083040)}
+body[data-theme="dark"] .expense-balance .exp-net strong{color:#50ffd2}
+body[data-theme="dark"] .expense-day{background:#132c3e;color:#eefbff}
+body[data-theme="dark"] .expense-day.has-expense{background:#482d37;border-color:#763f51}
+body[data-theme="dark"] .expense-day.selected{border-color:#43f9cd}
+body[data-theme="dark"] .green{color:#39f3c0}
+body[data-theme="light"]{background:linear-gradient(155deg,#eaf5f8,#f9fcff 48%,#eef5f9)!important;color:#102b3d}
+body[data-theme="light"] .header{background:#fff;border:1px solid #d5e8f0;padding:13px;border-radius:22px;box-shadow:0 11px 22px #1c4e6a13}
+body[data-theme="light"] .hero{background:radial-gradient(circle at 100% 0%,#b0fae0,transparent 40%),linear-gradient(130deg,#f7fffd,#e6f9f6)!important;border:1px solid #94dfca!important;box-shadow:0 14px 28px #12836f1d!important}
+body[data-theme="light"] .hero .value{color:#086b5f;font-size:clamp(38px,11vw,55px)}
+body[data-theme="light"] .pay-card,body[data-theme="light"] .stat,body[data-theme="light"] .panel,body[data-theme="light"] .calendar,body[data-theme="light"] .push-panel{background:#fff!important;border:1px solid #d3e4ed!important;box-shadow:0 11px 26px #164d7012!important;border-radius:23px}
+body[data-theme="light"] .pay-card{border-top:2px solid #1ab797!important}
+body[data-theme="light"] .day{background:#edf5f8;border-color:#e0eaf1}
+body[data-theme="light"] .day.has{background:#cef4e6;border-color:#8adbbf}
+body[data-theme="light"] .day.selected{outline-color:#09b98d}
+body[data-theme="light"] .expense-balance .exp-net{background:linear-gradient(125deg,#d9fff1,#effffc)}
+body[data-theme="light"] .expense-tabs button.active{background:linear-gradient(130deg,#10bd9c,#4bdfbb);color:#07312a}
+body[data-theme="light"] .primary{background:linear-gradient(130deg,#03b992,#12a78c);box-shadow:0 9px 20px #10b08f30}
+body[data-theme="light"] .field input,body[data-theme="light"] .field textarea{background:#f7fbfd;border-color:#cddfe8}
 </style></head><body><main class="wrap"><header class="header"><div class="logo"><div class="mark"><img src="icon.png" alt="Diamante de Mis Sueldos"></div><div><div class="title">Mis Sueldos</div><div class="sub">Tu control personal de ingresos</div></div></div><div class="head-actions"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema" aria-pressed="false">🌙 Oscuro</button><div class="pill private-pill">● Privado</div></div></header><section class="push-panel" id="pushPanel" aria-label="Notificaciones motivacionales"><button id="pushEnable" type="button" class="push-action">🔔 Activar notificaciones</button><button id="pushDisable" type="button" class="push-action off" hidden>🔔 Notificaciones activadas · Desactivar</button><div class="push-state" id="pushState" role="status" aria-live="polite">Comprobando notificaciones…</div></section><section class="hero"><div class="eyebrow">Ingreso real de la semana</div><div class="value" id="earned">$0.00</div><div class="hero-footer"><span id="weekTitle">Semana actual</span><span id="percentText">0% de tu proyección</span></div><div class="progress"><div id="progressFill"></div></div><div class="hero-footer"><span>Meta proyectada de la semana</span><strong id="goal">$0.00</strong></div><div class="period-note" id="weeklyDifference"></div></section>
 <div class="pay-grid"><section class="pay-card"><h3>💸 Dos semanas para cobrar</h3><div class="big" id="biEarned">$0.00</div><div class="micro" id="biDates"></div><div class="track"><b id="biProgress"></b></div><div class="micro">Proyección: <strong id="biProjected">$0.00</strong></div><div class="micro" id="biDifference"></div></section><section class="pay-card"><h3>📅 Semana anterior</h3><div class="big" id="prevEarned">$0.00</div><div class="micro" id="prevDates"></div><div class="track"><b id="prevProgress"></b></div><div class="micro">Proyección: <strong id="prevProjected">$0.00</strong></div><div class="micro" id="prevDifference"></div></section></div>
 <section class="stats"><div class="stat"><div class="sub">Falta para meta semanal</div><div class="amount orange" id="remaining">$0.00</div></div><div class="stat"><div class="sub">Trabajo 1 · semana</div><div class="amount" id="job1Total">$0.00</div></div><div class="stat"><div class="sub">Trabajo 2 · semana</div><div class="amount" id="job2Total">$0.00</div></div></section>
