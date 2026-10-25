@@ -180,7 +180,7 @@ body[data-theme="dark"] .bank-range-tip{color:#93b6c2}
 /* Registro automático de pagos, mantiene la interfaz Pro */
 body[data-theme="dark"] .expense-item .pay-occurrence.is-paid{border-color:#1bcaa5;background:#0b453a;color:#adffe7}
 body[data-theme="light"] .expense-item .pay-occurrence.is-paid{border-color:#45c39c;background:#e6fff3;color:#086b53}
-</style></head><body><main class="wrap"><header class="header"><div class="logo"><div class="mark"><img src="icon.png" alt="Diamante de Mis Sueldos"></div><div><div class="title">Mis Sueldos</div><div class="sub">Tu control personal de ingresos</div></div></div><div class="head-actions"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema" aria-pressed="false">🌙 Oscuro</button><div class="pill private-pill">● Privado</div></div></header><section class="push-panel" id="pushPanel" aria-label="Notificaciones motivacionales"><button id="pushEnable" type="button" class="push-action">🔔 Activar notificaciones</button><button id="pushDisable" type="button" class="push-action off" hidden>🔔 Notificaciones activadas · Desactivar</button><div class="push-state" id="pushState" role="status" aria-live="polite">Comprobando notificaciones…</div></section><section class="hero"><div class="eyebrow">Ingreso real de la semana</div><div class="value" id="earned">$0.00</div><div class="hero-footer"><span id="weekTitle">Semana actual</span><span id="percentText">0% de tu proyección</span></div><div class="progress"><div id="progressFill"></div></div><div class="hero-footer"><span>Meta proyectada de la semana</span><strong id="goal">$0.00</strong></div><div class="period-note" id="weeklyDifference"></div></section>
+</style></head><body><main class="wrap"><header class="header"><div class="logo"><div class="mark"><img src="icon.png" alt="Diamante de Mis Sueldos"></div><div><div class="title">Mis Sueldos</div><div class="sub">Tu control personal de ingresos</div></div></div><div class="head-actions"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema" aria-pressed="false">🌙 Oscuro</button><div class="pill private-pill">● Privado</div></div></header><section class="hero"><div class="eyebrow">Ingreso real de la semana</div><div class="value" id="earned">$0.00</div><div class="hero-footer"><span id="weekTitle">Semana actual</span><span id="percentText">0% de tu proyección</span></div><div class="progress"><div id="progressFill"></div></div><div class="hero-footer"><span>Meta proyectada de la semana</span><strong id="goal">$0.00</strong></div><div class="period-note" id="weeklyDifference"></div></section>
 <div class="pay-grid"><section class="pay-card"><h3>💸 Dos semanas para cobrar</h3><div class="big" id="biEarned">$0.00</div><div class="micro" id="biDates"></div><div class="track"><b id="biProgress"></b></div><div class="micro">Proyección: <strong id="biProjected">$0.00</strong></div><div class="micro" id="biDifference"></div></section><section class="pay-card"><h3>📅 Semana anterior</h3><div class="big" id="prevEarned">$0.00</div><div class="micro" id="prevDates"></div><div class="track"><b id="prevProgress"></b></div><div class="micro">Proyección: <strong id="prevProjected">$0.00</strong></div><div class="micro" id="prevDifference"></div></section></div>
 <section class="stats"><div class="stat"><div class="sub">Falta para meta semanal</div><div class="amount orange" id="remaining">$0.00</div></div><div class="stat"><div class="sub">Trabajo 1 · semana</div><div class="amount" id="job1Total">$0.00</div></div><div class="stat"><div class="sub">Trabajo 2 · semana</div><div class="amount" id="job2Total">$0.00</div></div></section>
 <section class="panel" style="margin-bottom:18px"><div class="row"><h2 style="font-size:18px;margin:0">🎯 Tu próximo cobro</h2><strong id="paydayTitle">24 oct 2026</strong></div><p class="muted" id="payInfo"></p><div class="summaryrow"><span>Meta de la quincena</span><strong id="payGoal">$0.00</strong></div><div class="summaryrow"><span>Ingresos registrados</span><strong id="payActual">$0.00</strong></div><div class="summaryrow"><span>Te falta para tu meta</span><strong id="payMissing">$0.00</strong></div><p class="muted">Los totales reflejan ingresos registrados, no confirman depósitos recibidos. La meta se calcula a partir de tus proyecciones diarias.</p></section><div class="section"><h2>📅 Calendario</h2><div class="monthnav"><button class="round" id="prev" aria-label="Mes anterior">‹</button><button class="pill" id="goToday">Hoy</button><button class="round" id="next" aria-label="Mes siguiente">›</button></div></div><div class="calendar"><div class="weekdays"><div>Dom</div><div>Lun</div><div>Mar</div><div>Mié</div><div>Jue</div><div>Vie</div><div>Sáb</div></div><div class="days" id="days"></div><div class="legend"><span><i class="dot"></i> Día registrado</span><span>Selecciona un día para editarlo</span></div></div><section class="panel" id="editor"><div class="formtop"><div><h2 id="editTitle" style="font-size:19px;margin:0 0 4px">Registrar ingreso</h2><div class="mini">Proyectado = lo que esperas ganar · Real = lo que recibiste</div></div></div><div class="fieldgrid"><div class="field"><label for="p1">Trabajo 1 · proyectado ($)</label><input type="number" id="p1" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></div><div class="field"><label for="a1">Trabajo 1 · real ($)</label><input type="number" id="a1" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></div><div class="field"><label for="p2">Trabajo 2 · proyectado ($)</label><input type="number" id="p2" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></div><div class="field"><label for="a2">Trabajo 2 · real ($)</label><input type="number" id="a2" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></div></div><div class="field"><label for="notes">Notas (horas, propinas, descuentos…)</label><textarea id="notes" placeholder="Ej.: 13 horas + propinas"></textarea></div><div class="actions"><button class="primary" id="save">Guardar día ✓</button><button class="danger" id="clear">Borrar este día</button></div></section><section class="panel bank-panel" id="bankPanel" aria-labelledby="bankTitle">
@@ -202,7 +202,7 @@ body[data-theme="light"] .expense-item .pay-occurrence.is-paid{border-color:#45c
 <div class="expense-calendar"><div class="exp-weekdays"><span>Dom</span><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span></div><div class="expense-days" id="expenseDays"></div></div>
 <div class="exp-editor"><h3 id="expSelectedTitle"></h3><form id="expenseForm"><label>Nombre del gasto<input id="expenseName" maxlength="80" required placeholder="Ej.: gasolina, arriendo, Klarna"></label><div class="exp-form-grid"><label>Monto ($)<input id="expenseAmount" type="number" min="0.01" step="0.01" required placeholder="0.00"></label><label>Frecuencia<select id="expenseFrequency"><option value="once">Solo este día</option><option value="week">Semanal</option><option value="biweek">Quincenal (14 días)</option><option value="month">Mensual</option></select></label></div><input type="hidden" id="expenseEditId"><div class="exp-actions"><button class="primary" type="submit" id="expenseSubmit">+ Guardar gasto</button><button class="ghost" type="button" id="expenseCancel" hidden>Cancelar edición</button></div></form><div id="expEntries" class="expense-entries"></div></div>
 <p class="muted exp-hint">Los gastos recurrentes se calculan automáticamente desde la fecha que indiques. Puedes editar o eliminar toda una recurrencia; los importes futuros aún cuentan como previstos, no como pagos confirmados.</p>
-</section><section class="panel"><h2 style="font-size:19px;margin:0 0 8px">🔒 Tus datos y respaldo</h2><p class="muted">Esta versión guarda los registros <strong>solo en este navegador/dispositivo</strong>. Si borras los datos de Safari o cambias de teléfono, podrías perderlos. Descarga un respaldo con frecuencia. No subas un archivo de respaldo a sitios que no sean de confianza.</p><div class="actions"><button class="ghost" id="exportJson">⬇ Respaldo JSON</button><button class="ghost" id="exportCsv">⬇ Exportar CSV</button><button class="ghost" id="importBtn">⬆ Restaurar respaldo</button><input type="file" id="importFile" accept=".json,application/json" style="display:none"></div></section><p class="foot">Mis Sueldos · Versión 3.6 Premium · Funciona sin cuenta. En el iPhone: abre el enlace en Safari → Compartir → Añadir a pantalla de inicio.</p></main><div class="toast" id="toast" role="status"></div><script>
+</section><p class="muted" style="font-size:12px;margin:12px 0">🔕 Las notificaciones fueron retiradas de esta versión. Para detener los envíos automáticos desactiva también el flujo «Motivación horaria Mis Sueldos» en GitHub Actions.</p><section class="panel"><h2 style="font-size:19px;margin:0 0 8px">🔒 Tus datos y respaldo</h2><p class="muted">Esta versión guarda los registros <strong>solo en este navegador/dispositivo</strong>. Si borras los datos de Safari o cambias de teléfono, podrías perderlos. Descarga un respaldo con frecuencia. No subas un archivo de respaldo a sitios que no sean de confianza.</p><div class="actions"><button class="ghost" id="exportJson">⬇ Respaldo JSON</button><button class="ghost" id="exportCsv">⬇ Exportar CSV</button><button class="ghost" id="importBtn">⬆ Restaurar respaldo</button><input type="file" id="importFile" accept=".json,application/json" style="display:none"></div></section><p class="foot">Mis Sueldos · Versión 4.2 Pro · Funciona sin cuenta. En el iPhone: abre el enlace en Safari → Compartir → Añadir a pantalla de inicio.</p></main><div class="toast" id="toast" role="status"></div><script>
 (()=>{'use strict';const $=id=>document.getElementById(id);const KEY='mis-sueldos-v1';const THEME_KEY='mis-sueldos-theme';function setTheme(theme){const dark=theme==='dark';document.body.dataset.theme=dark?'dark':'light';$('themeToggle').textContent=dark?'☀️ Claro':'🌙 Oscuro';$('themeToggle').setAttribute('aria-pressed',String(dark));document.querySelector('meta[name="theme-color"]').setAttribute('content',dark?'#09111f':'#f4f7fb');try{localStorage.setItem(THEME_KEY,dark?'dark':'light')}catch(e){}}$('themeToggle').addEventListener('click',()=>setTheme(document.body.dataset.theme==='dark'?'light':'dark'));try{setTheme(localStorage.getItem(THEME_KEY)||'light')}catch(e){setTheme('light')}let records={};try{const saved=JSON.parse(localStorage.getItem(KEY)||'{}');if(saved&&typeof saved==='object'&&!Array.isArray(saved))records=saved}catch(e){}const now=new Date();let year=now.getFullYear(),month=now.getMonth(),selected=dateKey(now);const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n||0);const monthName=(y,m)=>new Intl.DateTimeFormat('es',{month:'long',year:'numeric'}).format(new Date(y,m,1));function dateKey(d){return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')}const safeNum=v=>{if(v===null||v===undefined||v==='')return 0;const n=Number(v);return Number.isFinite(n)&&n>=0?n:0};function read(id){return $(id).value.trim()===''?'':safeNum($(id).value)}function notify(s){const t=$('toast');t.textContent=s;t.classList.add('show');clearTimeout(notify.timer);notify.timer=setTimeout(()=>t.classList.remove('show'),2600)}function saveStore(){try{localStorage.setItem(KEY,JSON.stringify(records));return true}catch(e){notify('No se pudo guardar. Exporta un respaldo.');return false}}function sumsRange(from,to){let p1=0,p2=0,a1=0,a2=0;for(const [k,v] of Object.entries(records)){if(k<from||k>to)continue;p1+=safeNum(v.p1);p2+=safeNum(v.p2);a1+=safeNum(v.a1);a2+=safeNum(v.a2)}return{p1,p2,a1,a2,proj:p1+p2,actual:a1+a2}}
 function utcKey(d){return d.toISOString().slice(0,10)}function keyDate(k){return new Date(k+'T00:00:00Z')}function shift(k,n){let d=keyDate(k);d.setUTCDate(d.getUTCDate()+n);return utcKey(d)}function weekStart(k){const day=keyDate(k).getUTCDay();return shift(k,-((day+6)%7))}
 const PAY_ANCHOR='2026-10-24';const DAY=86400000;function payday(k){const delta=Math.floor((keyDate(k)-keyDate(PAY_ANCHOR))/DAY);const until=(( -delta)%14+14)%14;return shift(k,until)}function payPeriod(k){const payDate=payday(k);return {start:shift(payDate,-19),end:shift(payDate,-6),payDate}}
@@ -287,7 +287,7 @@ window.bankSettleOccurrence=function(expense,day,markPaid){
  const cents=x=>Math.round(numeric(x)*100);
  const a=cents(bank.amount1),b=cents(bank.amount2);
  if(markPaid){
-  if(entries[key])return {ok:false,message:'Este pago ya fue descontado de una cuenta'};
+  if(entries[key])return {ok:true,message:'Pago marcado ✓ El descuento bancario ya estaba registrado; no se volvió a cobrar.'};
   const value=cents(expense.amount);
   if(value<=0)return {ok:false,message:'Revisa el monto del gasto'};
   const chosen=a>=b?1:2;
@@ -355,71 +355,4 @@ document.addEventListener('click',e=>{if(e.target.closest('#expenseForm, #expEnt
 setInterval(render,60000);
 })();
 </script>
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer onerror="document.addEventListener('DOMContentLoaded',function(){var e=document.getElementById('pushState');if(e)e.textContent='No pudo descargarse OneSignal desde su servidor. Revisa tu conexión o bloqueadores de Safari.'})"></script>
-<script>
-(function(){
-  'use strict';
-  var enable=document.getElementById('pushEnable');
-  var disable=document.getElementById('pushDisable');
-  var status=document.getElementById('pushState');
-  var os=null;
-  var sdkStarted=false;
-  var sdkTimer=setTimeout(function(){if(!os){setStatus(sdkStarted?'OneSignal inició pero no terminó la conexión. Revisa la configuración Web Push.':'El SDK de OneSignal no respondió. Revisa conexión o bloqueo de contenido en Safari.');}},12000);
-  function setStatus(s){status.textContent=s;status.classList.toggle("has-error",/error|no respondió|no terminó|no admite|bloqueado|no se pudieron|no se autorizó|necesita HTTPS|todavía está cargando/i.test(s));}
-  function redraw(){
-    if(!os)return;
-    var subscribed=Boolean(os.User && os.User.PushSubscription && os.User.PushSubscription.optedIn);
-    enable.hidden=subscribed;
-    disable.hidden=!subscribed;
-    setStatus(subscribed?'✅ Notificaciones activadas en este dispositivo':'🔕 Notificaciones desactivadas');
-  }
-  function init(){
-    if(!window.isSecureContext){setStatus('Se necesita HTTPS para las notificaciones.');return;}
-    if(!('serviceWorker' in navigator)||!('Notification' in window)){
-      setStatus('Este navegador no admite las notificaciones. En iPhone abre la app instalada en inicio.');return;
-    }
-    window.OneSignalDeferred=window.OneSignalDeferred||[];
-    window.OneSignalDeferred.push(async function(OneSignal){
-      sdkStarted=true;
-      setStatus('Conectando OneSignal con el iPhone…');
-      try{
-        await OneSignal.init({
-          appId:'8920a2de-6e84-4bc0-9191-78e952a9f4c6',
-          safari_web_id:'web.onesignal.auto.47d572d6-ef9d-4d9d-8962-815db43f4beb',
-          notifyButton:{enable:false},
-          serviceWorkerPath:'/kapitalcoins-app/onesignal/OneSignalSDKWorker.js',
-          serviceWorkerParam:{scope:'/kapitalcoins-app/onesignal/'}
-        });
-        os=OneSignal;
-        clearTimeout(sdkTimer);
-        if(os.User && os.User.PushSubscription && os.User.PushSubscription.addEventListener){
-          os.User.PushSubscription.addEventListener('change',redraw);
-        }
-        redraw();
-      }catch(err){clearTimeout(sdkTimer);console.error('OneSignal setup:',err);setStatus('Error de OneSignal: '+String(err?.message||err).slice(0,180));}
-    });
-  }
-  enable.addEventListener('click',async function(){
-    if(!os){setStatus('OneSignal todavía está cargando. Vuelve a intentarlo.');return;}
-    enable.disabled=true;
-    try{
-      if(Notification.permission==='denied'){
-        setStatus('Permiso bloqueado: actívalo desde Ajustes del iPhone > Notificaciones > Mis Sueldos.');return;
-      }
-      if(!os.Notifications.permission){await os.Notifications.requestPermission();}
-      if(os.Notifications.permission){await os.User.PushSubscription.optIn();}
-      redraw();
-      if(!os.Notifications.permission)setStatus('No se autorizó el permiso de notificaciones.');
-    }catch(err){console.error(err);setStatus('No se pudieron activar. Abre la app desde el icono de inicio y revisa permisos.');}
-    finally{enable.disabled=false;}
-  });
-  disable.addEventListener('click',async function(){
-    if(!os)return;
-    disable.disabled=true;
-    try{await os.User.PushSubscription.optOut();redraw();}
-    catch(err){console.error(err);setStatus('No se pudieron desactivar. Prueba de nuevo.');}
-    finally{disable.disabled=false;}
-  });
-  init();
-})();
-</script></body></html>
+</body></html>
