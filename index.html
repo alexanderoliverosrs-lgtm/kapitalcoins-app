@@ -180,6 +180,80 @@ body[data-theme="dark"] .bank-range-tip{color:#93b6c2}
 /* Registro automático de pagos, mantiene la interfaz Pro */
 body[data-theme="dark"] .expense-item .pay-occurrence.is-paid{border-color:#1bcaa5;background:#0b453a;color:#adffe7}
 body[data-theme="light"] .expense-item .pay-occurrence.is-paid{border-color:#45c39c;background:#e6fff3;color:#086b53}
+
+/* Mis Sueldos 4.3 — Nexus Blue. Visual only; same data, actions and calculations. */
+:root{--nexus:#2674ff;--nexus-light:#42b5ff;--nexus-text:#eaf3ff}
+body[data-theme="dark"]{background:radial-gradient(ellipse 95% 30% at 55% -5%,#15356d 0%,transparent 73%),linear-gradient(180deg,#050715 0%,#060b1d 52%,#030611 100%)!important;color:#eff4ff}
+body[data-theme="dark"] .header{background:linear-gradient(125deg,#111936e6,#0a1028ef);border:1px solid #304b85;border-radius:24px;padding:15px 17px;box-shadow:0 18px 48px #01030ca3;margin-bottom:20px}
+body[data-theme="dark"] .title{font-size:clamp(23px,6vw,30px);background:linear-gradient(95deg,#fff 20%,#58a5ff 60%,#2e72ff);color:transparent!important;background-clip:text;-webkit-background-clip:text;letter-spacing:-1px;font-weight:900}
+body[data-theme="dark"] .sub{color:#98acd2}
+body[data-theme="dark"] .mark{background:linear-gradient(135deg,#1461e5,#072251);border:1px solid #3168d4;box-shadow:0 0 24px #1763ff32}
+body[data-theme="dark"] .hero{background:radial-gradient(circle at 80% 10%,#1f41935b,transparent 50%),linear-gradient(145deg,#111f4b,#0a1332 75%)!important;border:1px solid #3474db!important;border-radius:25px;box-shadow:0 14px 44px #00123599, inset 0 1px #a5bfff1d!important;padding:23px}
+body[data-theme="dark"] .hero .eyebrow{color:#b4d1ff;letter-spacing:1.1px}
+body[data-theme="dark"] .hero .value{color:#fff;font-size:clamp(42px,10vw,57px);text-shadow:0 1px 18px #2e7bff45}
+body[data-theme="dark"] .hero-footer{color:#a9bfe7}
+body[data-theme="dark"] .hero-footer strong{color:#eff5ff}
+body[data-theme="dark"] .progress,body[data-theme="dark"] .pay-card .track{background:#1d2f58}
+body[data-theme="dark"] .progress>div,body[data-theme="dark"] .pay-card .track b{background:linear-gradient(90deg,#155afa,#43b4ff);box-shadow:0 0 14px #388aff77}
+body[data-theme="dark"] .stat,body[data-theme="dark"] .pay-card,body[data-theme="dark"] .panel,body[data-theme="dark"] .calendar,body[data-theme="dark"] .push-panel{background:radial-gradient(circle at 90% 0%,#1b327257,transparent 48%),linear-gradient(150deg,#101935,#090e22 85%)!important;border:1px solid #2b4e98!important;box-shadow:0 12px 38px #00092287,inset 0 1px #7eb5ff12!important;border-radius:24px}
+body[data-theme="dark"] .pay-card{border-top:2px solid #337dff!important}
+body[data-theme="dark"] .pay-card h3,body[data-theme="dark"] .stat .sub,body[data-theme="dark"] .pay-card .micro{color:#a9bfe1}
+body[data-theme="dark"] .pay-card .big,body[data-theme="dark"] .stat .amount{color:#f4f9ff}
+body[data-theme="dark"] .section h2,body[data-theme="dark"] .panel h2{color:#f3f7ff!important;letter-spacing:-.4px}
+body[data-theme="dark"] .pill,body[data-theme="dark"] .theme-toggle,body[data-theme="dark"] .round,body[data-theme="dark"] .ghost{background:linear-gradient(135deg,#15274b,#0e1834);border-color:#345a9f;color:#dbe9ff;box-shadow:inset 0 1px #87afff15}
+body[data-theme="dark"] .day{background:#142543!important;border:1px solid #1a315c!important;color:#edf5ff;border-radius:12px}
+body[data-theme="dark"] .day.empty{background:transparent!important;border-color:transparent!important}
+body[data-theme="dark"] .day.has{background:linear-gradient(145deg,#12418c,#112d66)!important;border-color:#2d7aff!important}
+body[data-theme="dark"] .day.has small,body[data-theme="dark"] .day small{color:#a8d5ff}
+body[data-theme="dark"] .day.selected{outline:2px solid #60b4ff;outline-offset:1px}
+body[data-theme="dark"] .day.today{border-color:#60b4ff!important}
+body[data-theme="dark"] .day.behind{background:#43243b!important;border-color:#a85475!important}
+body[data-theme="dark"] .day.behind small,body[data-theme="dark"] .day.behind .daily-gap{color:#ffa3be}
+body[data-theme="dark"] .day.pending{background:#142543!important}
+body[data-theme="dark"] .dot,body[data-theme="dark"] .day i{background:#479bff}
+body[data-theme="dark"] .field input,body[data-theme="dark"] .field textarea,body[data-theme="dark"] .exp-editor input,body[data-theme="dark"] .exp-editor select{background:#080f25!important;color:#eef6ff!important;border:1px solid #2d4e88!important;box-shadow:inset 0 2px 10px #0004}
+body[data-theme="dark"] .field label,body[data-theme="dark"] .exp-editor label{color:#a9bfdf}
+body[data-theme="dark"] .summaryrow,body[data-theme="dark"] .mini-table td,body[data-theme="dark"] .mini-table th,body[data-theme="dark"] .expense-item{border-color:#243d6a}
+body[data-theme="dark"] .primary,body[data-theme="dark"] .push-action:not(.off){background:linear-gradient(125deg,#1268ff,#36adff);color:#fff;box-shadow:0 9px 24px #146cfa65}
+body[data-theme="dark"] .expense-tabs{background:#09132c;border:1px solid #263f78}
+body[data-theme="dark"] .expense-tabs button.active{background:linear-gradient(120deg,#205bef,#339bff);color:#fff;box-shadow:0 4px 16px #2264e15b}
+body[data-theme="dark"] .expense-balance>div,body[data-theme="dark"] .expense-calendar{background:#0c1a36;border-color:#294b88}
+body[data-theme="dark"] .expense-balance .exp-net{background:linear-gradient(125deg,#123b75,#102858);border-color:#3277d9}
+body[data-theme="dark"] .expense-balance .exp-net strong{color:#78c2ff}
+body[data-theme="dark"] .expense-day{background:#142545;color:#f2f7ff}
+body[data-theme="dark"] .expense-day.has-expense{background:#422b46;border-color:#653d6d}
+body[data-theme="dark"] .expense-day.selected{border-color:#67afff}
+body[data-theme="dark"] .expense-day.today span{color:#6db7ff}
+body[data-theme="dark"] .expense-item .pay-occurrence,body[data-theme="dark"] .expense-item .pay-occurrence.is-paid{border-color:#408eff;color:#85bfff;background:#122850}
+body[data-theme="dark"] .expense-item .paid-status.is-paid,body[data-theme="dark"] .expense-day.all-paid small{color:#85c8ff!important}
+body[data-theme="dark"] .expense-day.all-paid{background:#143d72!important;border-color:#388cfb!important}
+body[data-theme="dark"] .bank-range-controls input,body[data-theme="dark"] .bank-input{background:#081630!important;color:#edf5ff!important;border-color:#3166b4!important}
+body[data-theme="dark"] .bank-range-controls label{color:#adc4e9}
+body[data-theme="dark"] .bank-net{background:linear-gradient(130deg,#133d7a,#11315c)!important;border-color:#3678ed!important}
+body[data-theme="dark"] .bank-net strong,body[data-theme="dark"] .bank-net .bank-amount{color:#7bbdff!important}
+body[data-theme="dark"] .bank-breakdown>div{border-color:#31538c}
+body[data-theme="dark"] .bank-upcoming-row{border-color:#294675}
+body[data-theme="dark"] .green,body[data-theme="dark"] .over{color:#80bdff}
+body[data-theme="light"]{background:linear-gradient(145deg,#eaf1ff,#f9fbff 58%,#eef4ff)!important;color:#162a4d}
+body[data-theme="light"] .header{background:#fff;border:1px solid #d4e1ff;padding:14px;border-radius:22px;box-shadow:0 10px 28px #1450a014}
+body[data-theme="light"] .title{color:#125cce}
+body[data-theme="light"] .hero{background:radial-gradient(circle at 95% 0%,#b6d1ff,transparent 46%),linear-gradient(140deg,#fff,#edf4ff)!important;border-color:#9dc1ff!important;box-shadow:0 12px 28px #2c69d026!important}
+body[data-theme="light"] .hero .value{color:#1556b8}
+body[data-theme="light"] .stat,body[data-theme="light"] .pay-card,body[data-theme="light"] .panel,body[data-theme="light"] .calendar{background:#fff!important;border-color:#d0dff9!important;box-shadow:0 9px 24px #2d64ad14!important}
+body[data-theme="light"] .day.has{background:#d9eaff;border-color:#9fc5fd}
+body[data-theme="light"] .day.selected{outline-color:#2677ff}
+body[data-theme="light"] .day.today{border-color:#2677ff}
+body[data-theme="light"] .day small,body[data-theme="light"] .green{color:#155ec8}
+body[data-theme="light"] .primary,body[data-theme="light"] .expense-tabs button.active{background:linear-gradient(130deg,#185ded,#3aabff);color:#fff;box-shadow:0 6px 18px #256dfa2b}
+body[data-theme="light"] .progress>div,body[data-theme="light"] .pay-card .track b{background:linear-gradient(90deg,#1857ef,#4dbbff)}
+body[data-theme="light"] .bank-net,body[data-theme="light"] .expense-balance .exp-net{background:linear-gradient(120deg,#d6e9ff,#ecf5ff)!important;border-color:#85b3ff!important}
+body[data-theme="light"] .bank-net strong,body[data-theme="light"] .expense-balance .exp-net strong{color:#155cc4!important}
+body[data-theme="light"] .bank-range-controls input,body[data-theme="light"] .bank-input{border-color:#9dc1f8;background:#f8fbff}
+body[data-theme="light"] .expense-item .pay-occurrence{border-color:#286de3;color:#1f62d4;background:#ebf3ff}
+body[data-theme="light"] .expense-day.all-paid{background:#dfedff!important;border-color:#2a77ed!important}
+body[data-theme="light"] .expense-day.all-paid small,body[data-theme="light"] .expense-item .paid-status.is-paid{color:#1967d6!important}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:#378fff!important}
+
 </style></head><body><main class="wrap"><header class="header"><div class="logo"><div class="mark"><img src="icon.png" alt="Diamante de Mis Sueldos"></div><div><div class="title">Mis Sueldos</div><div class="sub">Tu control personal de ingresos</div></div></div><div class="head-actions"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema" aria-pressed="false">🌙 Oscuro</button><div class="pill private-pill">● Privado</div></div></header><section class="hero"><div class="eyebrow">Ingreso real de la semana</div><div class="value" id="earned">$0.00</div><div class="hero-footer"><span id="weekTitle">Semana actual</span><span id="percentText">0% de tu proyección</span></div><div class="progress"><div id="progressFill"></div></div><div class="hero-footer"><span>Meta proyectada de la semana</span><strong id="goal">$0.00</strong></div><div class="period-note" id="weeklyDifference"></div></section>
 <div class="pay-grid"><section class="pay-card"><h3>💸 Dos semanas para cobrar</h3><div class="big" id="biEarned">$0.00</div><div class="micro" id="biDates"></div><div class="track"><b id="biProgress"></b></div><div class="micro">Proyección: <strong id="biProjected">$0.00</strong></div><div class="micro" id="biDifference"></div></section><section class="pay-card"><h3>📅 Semana anterior</h3><div class="big" id="prevEarned">$0.00</div><div class="micro" id="prevDates"></div><div class="track"><b id="prevProgress"></b></div><div class="micro">Proyección: <strong id="prevProjected">$0.00</strong></div><div class="micro" id="prevDifference"></div></section></div>
 <section class="stats"><div class="stat"><div class="sub">Falta para meta semanal</div><div class="amount orange" id="remaining">$0.00</div></div><div class="stat"><div class="sub">Trabajo 1 · semana</div><div class="amount" id="job1Total">$0.00</div></div><div class="stat"><div class="sub">Trabajo 2 · semana</div><div class="amount" id="job2Total">$0.00</div></div></section>
@@ -202,7 +276,7 @@ body[data-theme="light"] .expense-item .pay-occurrence.is-paid{border-color:#45c
 <div class="expense-calendar"><div class="exp-weekdays"><span>Dom</span><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span></div><div class="expense-days" id="expenseDays"></div></div>
 <div class="exp-editor"><h3 id="expSelectedTitle"></h3><form id="expenseForm"><label>Nombre del gasto<input id="expenseName" maxlength="80" required placeholder="Ej.: gasolina, arriendo, Klarna"></label><div class="exp-form-grid"><label>Monto ($)<input id="expenseAmount" type="number" min="0.01" step="0.01" required placeholder="0.00"></label><label>Frecuencia<select id="expenseFrequency"><option value="once">Solo este día</option><option value="week">Semanal</option><option value="biweek">Quincenal (14 días)</option><option value="month">Mensual</option></select></label></div><input type="hidden" id="expenseEditId"><div class="exp-actions"><button class="primary" type="submit" id="expenseSubmit">+ Guardar gasto</button><button class="ghost" type="button" id="expenseCancel" hidden>Cancelar edición</button></div></form><div id="expEntries" class="expense-entries"></div></div>
 <p class="muted exp-hint">Los gastos recurrentes se calculan automáticamente desde la fecha que indiques. Puedes editar o eliminar toda una recurrencia; los importes futuros aún cuentan como previstos, no como pagos confirmados.</p>
-</section><p class="muted" style="font-size:12px;margin:12px 0">🔕 Las notificaciones fueron retiradas de esta versión. Para detener los envíos automáticos desactiva también el flujo «Motivación horaria Mis Sueldos» en GitHub Actions.</p><section class="panel"><h2 style="font-size:19px;margin:0 0 8px">🔒 Tus datos y respaldo</h2><p class="muted">Esta versión guarda los registros <strong>solo en este navegador/dispositivo</strong>. Si borras los datos de Safari o cambias de teléfono, podrías perderlos. Descarga un respaldo con frecuencia. No subas un archivo de respaldo a sitios que no sean de confianza.</p><div class="actions"><button class="ghost" id="exportJson">⬇ Respaldo JSON</button><button class="ghost" id="exportCsv">⬇ Exportar CSV</button><button class="ghost" id="importBtn">⬆ Restaurar respaldo</button><input type="file" id="importFile" accept=".json,application/json" style="display:none"></div></section><p class="foot">Mis Sueldos · Versión 4.2 Pro · Funciona sin cuenta. En el iPhone: abre el enlace en Safari → Compartir → Añadir a pantalla de inicio.</p></main><div class="toast" id="toast" role="status"></div><script>
+</section><p class="muted" style="font-size:12px;margin:12px 0">🔕 Las notificaciones fueron retiradas de esta versión. Para detener los envíos automáticos desactiva también el flujo «Motivación horaria Mis Sueldos» en GitHub Actions.</p><section class="panel"><h2 style="font-size:19px;margin:0 0 8px">🔒 Tus datos y respaldo</h2><p class="muted">Esta versión guarda los registros <strong>solo en este navegador/dispositivo</strong>. Si borras los datos de Safari o cambias de teléfono, podrías perderlos. Descarga un respaldo con frecuencia. No subas un archivo de respaldo a sitios que no sean de confianza.</p><div class="actions"><button class="ghost" id="exportJson">⬇ Respaldo JSON</button><button class="ghost" id="exportCsv">⬇ Exportar CSV</button><button class="ghost" id="importBtn">⬆ Restaurar respaldo</button><input type="file" id="importFile" accept=".json,application/json" style="display:none"></div></section><p class="foot">Mis Sueldos · Versión 4.3 Azul Premium · Funciona sin cuenta. En el iPhone: abre el enlace en Safari → Compartir → Añadir a pantalla de inicio.</p></main><div class="toast" id="toast" role="status"></div><script>
 (()=>{'use strict';const $=id=>document.getElementById(id);const KEY='mis-sueldos-v1';const THEME_KEY='mis-sueldos-theme';function setTheme(theme){const dark=theme==='dark';document.body.dataset.theme=dark?'dark':'light';$('themeToggle').textContent=dark?'☀️ Claro':'🌙 Oscuro';$('themeToggle').setAttribute('aria-pressed',String(dark));document.querySelector('meta[name="theme-color"]').setAttribute('content',dark?'#09111f':'#f4f7fb');try{localStorage.setItem(THEME_KEY,dark?'dark':'light')}catch(e){}}$('themeToggle').addEventListener('click',()=>setTheme(document.body.dataset.theme==='dark'?'light':'dark'));try{setTheme(localStorage.getItem(THEME_KEY)||'light')}catch(e){setTheme('light')}let records={};try{const saved=JSON.parse(localStorage.getItem(KEY)||'{}');if(saved&&typeof saved==='object'&&!Array.isArray(saved))records=saved}catch(e){}const now=new Date();let year=now.getFullYear(),month=now.getMonth(),selected=dateKey(now);const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n||0);const monthName=(y,m)=>new Intl.DateTimeFormat('es',{month:'long',year:'numeric'}).format(new Date(y,m,1));function dateKey(d){return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')}const safeNum=v=>{if(v===null||v===undefined||v==='')return 0;const n=Number(v);return Number.isFinite(n)&&n>=0?n:0};function read(id){return $(id).value.trim()===''?'':safeNum($(id).value)}function notify(s){const t=$('toast');t.textContent=s;t.classList.add('show');clearTimeout(notify.timer);notify.timer=setTimeout(()=>t.classList.remove('show'),2600)}function saveStore(){try{localStorage.setItem(KEY,JSON.stringify(records));return true}catch(e){notify('No se pudo guardar. Exporta un respaldo.');return false}}function sumsRange(from,to){let p1=0,p2=0,a1=0,a2=0;for(const [k,v] of Object.entries(records)){if(k<from||k>to)continue;p1+=safeNum(v.p1);p2+=safeNum(v.p2);a1+=safeNum(v.a1);a2+=safeNum(v.a2)}return{p1,p2,a1,a2,proj:p1+p2,actual:a1+a2}}
 function utcKey(d){return d.toISOString().slice(0,10)}function keyDate(k){return new Date(k+'T00:00:00Z')}function shift(k,n){let d=keyDate(k);d.setUTCDate(d.getUTCDate()+n);return utcKey(d)}function weekStart(k){const day=keyDate(k).getUTCDay();return shift(k,-((day+6)%7))}
 const PAY_ANCHOR='2026-10-24';const DAY=86400000;function payday(k){const delta=Math.floor((keyDate(k)-keyDate(PAY_ANCHOR))/DAY);const until=(( -delta)%14+14)%14;return shift(k,until)}function payPeriod(k){const payDate=payday(k);return {start:shift(payDate,-19),end:shift(payDate,-6),payDate}}
